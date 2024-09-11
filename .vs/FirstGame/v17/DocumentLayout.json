@@ -18,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MySprite2D.cs",
+              "DocumentMoniker": "C:\\Users\\summe\\Dropbox\\Games\\firstgame\\Scripts\\MySprite2D.cs",
+              "RelativeDocumentMoniker": "Scripts\\MySprite2D.cs",
+              "ToolTip": "C:\\Users\\summe\\Dropbox\\Games\\firstgame\\Scripts\\MySprite2D.cs",
+              "RelativeToolTip": "Scripts\\MySprite2D.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:45:27.197Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -30,21 +43,7 @@
               "RelativeToolTip": "Scripts\\RootNode.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T11:15:01.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MySprite2D.cs",
-              "DocumentMoniker": "C:\\Users\\summe\\Dropbox\\Games\\firstgame\\Scripts\\MySprite2D.cs",
-              "RelativeDocumentMoniker": "Scripts\\MySprite2D.cs",
-              "ToolTip": "C:\\Users\\summe\\Dropbox\\Games\\firstgame\\Scripts\\MySprite2D.cs",
-              "RelativeToolTip": "Scripts\\MySprite2D.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:45:27.197Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-11T11:15:01.517Z"
             }
           ]
         }
