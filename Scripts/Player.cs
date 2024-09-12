@@ -3,6 +3,9 @@ using System;
 
 public partial class Player : Area2D
 {
+	[Signal]
+	public delegate void HitEventHandler();
+
 	[Export]
 	public int Speed { get; set; } = 400; //speed in pixels/sec
 	public Vector2 ScreenSize; //game window size
@@ -73,5 +76,21 @@ public partial class Player : Area2D
 			animatedSprite2D.Animation = "up";
 			animatedSprite2D.FlipV = velocity.Y > 0;
 		}
+	}
+
+	public void Start(Vector2 position)
+	{
+		Position = position;
+		Show();
+		GetNode<CollisionShape2D>("CollisionShape2D").Disabled = false;
+	}
+
+	private void OnBodyEntered(Node2D body)
+	{
+		Hide();
+		EmitSignal(SignalName.Hit);
+		// temporarily disable collision shap on hit, to avoid signaling hit more than once in a frame
+		// it is deferred so that the engine waits until it's safe to do so
+		GetNode<CollisionShape2D>("CollisionShape2D").SetDeferred(CollisionShape2D.PropertyName.Disabled, true);
 	}
 }
