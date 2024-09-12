@@ -10,7 +10,6 @@ public partial class Main : Node
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		return;
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -22,26 +21,44 @@ public partial class Main : Node
 	{
 		GetNode<Timer>("MobTimer").Stop();
 		GetNode<Timer>("ScoreTimer").Stop();
+		GetNode<HUD>("HUD").ShowGameOver();
+
+		// play death music
+		GetNode<AudioStreamPlayer2D>("Music").Stop();
+		GetNode<AudioStreamPlayer2D>("DeathSFX").Play();
 	}
 
 	public void NewGame()
 	{
-		_score = 0;
+		// reset player
 		Player player = GetNode<Player>("Player");
 		Marker2D startPosition = GetNode<Marker2D>("StartPosition");
 		player.Start(startPosition.Position);
 
-		GetNode<Timer>("StartTimer").Start();
-	}
+		// reset mobs
+		GetTree().CallGroup("mobs", Node.MethodName.QueueFree);//call queufree on every members of mobs group
+
+        // reset score and timer
+        _score = 0;
+        GetNode<Timer>("StartTimer").Start();
+
+		// update HUD
+        HUD hud = GetNode<HUD>("HUD");
+        hud.UpdateScore(_score);
+        hud.ShowMessage("Get Ready!");
+
+		// play game music
+		GetNode<AudioStreamPlayer2D>("Music").Play();
+    }
 
 	private void OnScoreTimerTimeout()
 	{
 		_score++;
-	}
+        GetNode<HUD>("HUD").UpdateScore(_score);
+    }
 
 	private void OnStartTimerTimeout()
 	{
-		GD.Print("start timer timed out");
         GetNode<Timer>("MobTimer").Start();
         GetNode<Timer>("ScoreTimer").Start();
     }
