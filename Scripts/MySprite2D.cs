@@ -4,45 +4,51 @@ using System;
 public partial class MySprite2D : Sprite2D
 {
     // export variables
+    [Signal]
+    public delegate void HealthDepletedEventHandler();
 
     // member variables
     private int _speed = 400;
     private float _angularSpeed = Mathf.Pi; // radians by default
+    private int _health = 10;
+    public int Health // this is used for signals, the _health is auto-set by init and causes infinite loop
+    {
+        get { return _health; }
+        set
+        {
+            _health = value;
+            if(_health < 0)
+            {
+                EmitSignal(SignalName.HealthDepleted);
+                _health = 10;
+            }
+        }
+    }
+    // called on object initilization
+    public override void _Ready()
+    {
+        _health = 10;
+        Timer timer = GetNode<Timer>("MyTimer");//Looks for object of type with specified name
+        timer.Timeout += OnTimerTimeout; // connect timer's timeout signal to function OnTimerTimeout
+    }
 
-    // functions
+    // called once a frame
     public override void _Process(double delta) // delta is time elapsed since last frame
     {
-        // ui_left / ui_right are defaulted to arrow keys and gamepad
-        // this can be modified in the Input Map settings of Godot
-        Int16 direction = 0;
-        if (Input.IsActionPressed("ui_left"))
-        {
-            direction = -1;
-        }
-        if (Input.IsActionPressed("ui_right"))
-        {
-            direction = 1;
-        }
-
-        // rotate object orientation in space
-        Rotation += _angularSpeed * direction * (float)delta;
-
-        // set local velocity dir/magnitude to no movement
-        Vector2 velocity = Vector2.Zero;
-        if (Input.IsActionPressed("ui_up"))
-        {
-            // Vector2.Up is global forward direction, align with this object's forward
-            // direction by rotating the same direction that this object has rotated
-            // velocity is towards that forward direction at the magnitude of _speed;
-            velocity = Vector2.Up.Rotated(Rotation) * _speed;
-        }
-
-        // move towards target dir/mag encapsulated by velocity, but only move
-        // partially to the goal vector. The partial amount is encapsulated by the delta
+        Rotation += _angularSpeed * (float)delta;
+        var velocity = Vector2.Up.Rotated(Rotation) * _speed;
         Position += velocity * (float)delta;
     }
 
-    //_unhandled_input() -> callback best for events that don't occur every frame
+    private void OnButtonPressed()
+    {
+        SetProcess(!IsProcessing()); // toggle on/off the process function to begin/stop
+        Health--;
+        GD.Print("health is: " + Health);
+    }
 
-    //Input singleton -> global object best for checking input every frame
+    private void OnTimerTimeout()
+    {
+        Visible = !Visible;
+    }
 }
