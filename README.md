@@ -1,7 +1,7 @@
 # Godot .Net DogeCreeps
 ### Description
 
-This overall purpose of this game is to showcase the various essentials of making a .Net based game in the Godot 4 Engine. The game 'Dodge Creeps' is about roaming a void space where you collect objects to reach a high score. This includes graphics, input, signals, GUI, and other basics of the engine. To see progress at each lesson you can view the sub-branches which show the project code at the end of that lesson number. The master branch has the final product. 
+This overall purpose of this game is to showcase the various essentials of making a .Net based game in the Godot 4 Engine. The game 'Dodge Creeps' is about roaming a void space where you avoid collision with enemies to reach a high score. This includes graphics, input, signals, GUI, and other basics of the engine. To see progress at each lesson you can view the sub-branches which show the project code at the end of that lesson number. The master branch has the final product. 
 
 ### Testing
 
