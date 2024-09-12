@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\summe\\Dropbox\\Games\\firstgame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D782EB02-34E7-4247-A775-3A2F34C534F3}|FirstGame.csproj|c:\\users\\summe\\dropbox\\games\\firstgame\\scripts\\mysprite2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D782EB02-34E7-4247-A775-3A2F34C534F3}|FirstGame.csproj|solutionrelative:scripts\\mysprite2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D782EB02-34E7-4247-A775-3A2F34C534F3}|FirstGame.csproj|c:\\users\\summe\\dropbox\\games\\firstgame\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D782EB02-34E7-4247-A775-3A2F34C534F3}|FirstGame.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\summe\\Dropbox\\Games\\firstgame\\Scripts\\MySprite2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scripts\\MySprite2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\summe\\Dropbox\\Games\\firstgame\\Scenes\\MyTimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scenes\\MyTimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D782EB02-34E7-4247-A775-3A2F34C534F3}|FirstGame.csproj|c:\\users\\summe\\dropbox\\games\\firstgame\\scripts\\mytimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D782EB02-34E7-4247-A775-3A2F34C534F3}|FirstGame.csproj|solutionrelative:scripts\\mytimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\summe\\Dropbox\\Games\\firstgame\\Scripts\\MyTimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scripts\\MyTimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,24 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MyTimer.cs",
-              "DocumentMoniker": "C:\\Users\\summe\\Dropbox\\Games\\firstgame\\Scripts\\MyTimer.cs",
-              "RelativeDocumentMoniker": "Scripts\\MyTimer.cs",
-              "ToolTip": "C:\\Users\\summe\\Dropbox\\Games\\firstgame\\Scripts\\MyTimer.cs",
-              "RelativeToolTip": "Scripts\\MyTimer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\summe\\Dropbox\\Games\\firstgame\\Player.cs",
+              "RelativeDocumentMoniker": "Player.cs",
+              "ToolTip": "C:\\Users\\summe\\Dropbox\\Games\\firstgame\\Player.cs",
+              "RelativeToolTip": "Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T12:35:39.164Z",
+              "WhenOpened": "2024-09-12T12:57:41.432Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MyTimer.cs",
               "DocumentMoniker": "C:\\Users\\summe\\Dropbox\\Games\\firstgame\\Scenes\\MyTimer.cs",
               "RelativeDocumentMoniker": "Scenes\\MyTimer.cs",
@@ -47,21 +51,30 @@
               "RelativeToolTip": "Scenes\\MyTimer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T12:10:39.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T12:10:39.377Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MySprite2D.cs",
               "DocumentMoniker": "C:\\Users\\summe\\Dropbox\\Games\\firstgame\\Scripts\\MySprite2D.cs",
               "RelativeDocumentMoniker": "Scripts\\MySprite2D.cs",
               "ToolTip": "C:\\Users\\summe\\Dropbox\\Games\\firstgame\\Scripts\\MySprite2D.cs",
               "RelativeToolTip": "Scripts\\MySprite2D.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:45:27.197Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-11T10:45:27.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MyTimer.cs",
+              "DocumentMoniker": "C:\\Users\\summe\\Dropbox\\Games\\firstgame\\Scripts\\MyTimer.cs",
+              "RelativeDocumentMoniker": "Scripts\\MyTimer.cs",
+              "ToolTip": "C:\\Users\\summe\\Dropbox\\Games\\firstgame\\Scripts\\MyTimer.cs",
+              "RelativeToolTip": "Scripts\\MyTimer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T12:35:39.164Z"
             }
           ]
         }
